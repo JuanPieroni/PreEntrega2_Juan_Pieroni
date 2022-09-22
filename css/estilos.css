@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 
+/* INDEX */
+/* INDEX-NAVBAR */
+
+}
 .navbar-brand img {
 	width: 80px;
 }
@@ -28,16 +37,16 @@
 	margin-top: 0.5em;
 }
 
-/* carousel */
+/* INDEX-CARROUSEL */
 
-/* INDEX */
+
 
 .main {
 	height: 1000px;
 	background-color: blanchedalmond;
 }
 
-/* form */
+/* INDEX-NEWSLETTER*/
 
 .news {
 	padding: 80px;
@@ -84,6 +93,13 @@
 	background-color: rgb(48, 59, 155);
 	color: rgb(129, 194, 145);
 }
+
+/* CONTACTO */
+
+h4 {
+	text-transform: uppercase;
+}
+
 
 /* FOOTER */
 
