@@ -1,3 +1,5 @@
+/* HEADER */
+
 .navbar-brand img {
 	width: 80px;
 }
@@ -25,3 +27,57 @@
 .navbar .navbar-nav {
 	margin-top: 0.5em;
 }
+
+/* carousel */
+
+
+
+/* INDEX */
+
+.main {
+	height: 1000px;
+	background-color: blanchedalmond;
+}
+
+/* form */
+
+.newsletter {
+	padding: 80px;
+	background-color: #19beda;
+}
+
+.newsletter .content {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.newsletter .content h2 {
+	margin-bottom: 40px;
+	color: #243c4f;
+	/* border-radius: 4; */
+	/* background-color: aqua; */
+	color: #0a0d1a;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.newsletter .content .form-control {
+	height: 50px;
+	border-color: #fff;
+	border-radius: 4;
+}
+
+.newsletter .content .form-control:focus {
+	/* agregar algun efectito mas */
+	border: 2px solid black;
+}
+
+.newsletter .content .btn {
+	min-height: 50px;
+	border-radius: 4;
+	background-color: #243c4f;
+	color: white;
+	font-weight: 600;
+}
+
