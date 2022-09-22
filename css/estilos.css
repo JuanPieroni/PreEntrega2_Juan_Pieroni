@@ -1,4 +1,4 @@
-/* HEADER */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 .navbar-brand img {
 	width: 80px;
@@ -30,8 +30,6 @@
 
 /* carousel */
 
-
-
 /* INDEX */
 
 .main {
@@ -41,39 +39,40 @@
 
 /* form */
 
-.newsletter {
+.news {
 	padding: 80px;
-	background-color: #19beda;
+	background-color: rgb(129, 194, 145);
+	/* box-shadow:  50px 50px 50px 50px ; */
+	/* agregar margin para que se vea */
+	margin-top: 5px;
 }
 
-.newsletter .content {
+.news .content {
 	max-width: 650px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.newsletter .content h2 {
-	margin-bottom: 40px;
+.news .content h2 {
+	margin-bottom: 30px;
+
 	color: #243c4f;
-	/* border-radius: 4; */
-	/* background-color: aqua; */
 	color: #0a0d1a;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 
-.newsletter .content .form-control {
+.news .content .form-control {
 	height: 50px;
 	border-color: #fff;
 	border-radius: 4;
 }
 
-.newsletter .content .form-control:focus {
-	/* agregar algun efectito mas */
+.news .content .form-control:focus {
 	border: 2px solid black;
 }
 
-.newsletter .content .btn {
+.news .content .btn {
 	min-height: 50px;
 	border-radius: 4;
 	background-color: #243c4f;
@@ -81,3 +80,78 @@
 	font-weight: 600;
 }
 
+.news .content .btn:hover {
+	background-color: rgb(48, 59, 155);
+	color: rgb(129, 194, 145);
+}
+
+/* FOOTER */
+
+.footer {
+	width: 100%;
+	background-color: #0a141d;
+	margin-top: 5px;
+}
+.footer .footer-top {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+.footer .footer-top .grid-item figure {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .footer-top .grid-item figure img {
+	width: 150px;
+}
+.footer .footer-top .grid-item h2 {
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+.footer .footer-top .grid-item p {
+	color: #efefef;
+	margin-bottom: 10px;
+}
+.footer .footer-top .red-social a {
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 10px;
+	background-color: #0d2033;
+	text-align: center;
+	transition: all 300ms ease;
+}
+.footer .footer-top .red-social a:hover {
+	color: aqua;
+}
+.footer .footer-bottom {
+	background-color: #0a1a2a;
+	padding: 15px 10px;
+	text-align: center;
+	color: #fff;
+}
+.footer .footer-bottom small {
+	font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+	.footer .footer-top {
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+		padding: 35px 0px;
+	}
+	.footer .footer-top .grid-item figure img {
+		width: 100px;
+	}
+}
