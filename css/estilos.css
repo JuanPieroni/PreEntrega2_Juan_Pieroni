@@ -28,6 +28,12 @@
 	}
 }
 
+/* logo fade  */
+/* .navbar-brand img {
+	opacity: 0;
+	transition: opacity 230ms  ease-in-out ;
+} */
+
 .navbar .navbar-nav .nav-link {
 	color: black;
 	font-size: 1.1em;
@@ -35,6 +41,12 @@
 
 .navbar .navbar-nav {
 	margin-top: 0.5em;
+}
+
+
+ul li a:hover {
+	background-color: rgba(176, 171, 115, 0.144); 
+	border-radius: 15px;
 }
 
 /* INDEX-CARROUSEL */
