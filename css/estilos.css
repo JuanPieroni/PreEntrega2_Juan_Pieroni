@@ -120,7 +120,7 @@ h4 {
 	background-color: #0a141d;
 	margin-top: 5px;
 }
-.footer .footer-top {
+.footer .footerTop {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
@@ -129,26 +129,26 @@ h4 {
 	grid-gap: 50px;
 	padding: 45px 0px;
 }
-.footer .footer-top .grid-item figure {
+.footer .footerTop .footerGridItem span {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.footer .footer-top .grid-item figure img {
+.footer .footerTop .footerGridItem span img {
 	width: 150px;
 }
-.footer .footer-top .grid-item h2 {
+.footer .footerTop .footerGridItem h2 {
 	color: #fff;
 	margin-bottom: 25px;
 	font-size: 20px;
 }
-.footer .footer-top .grid-item p {
+.footer .footerTop .footerGridItem p {
 	color: #efefef;
 	margin-bottom: 10px;
 }
-.footer .footer-top .red-social a {
+.footer .footerTop .redSocial a {
 	display: inline-block;
 	text-decoration: none;
 	width: 45px;
@@ -160,26 +160,26 @@ h4 {
 	text-align: center;
 	transition: all 300ms ease;
 }
-.footer .footer-top .red-social a:hover {
+.footer .footerTop .redSocial a:hover {
 	color: aqua;
 }
-.footer .footer-bottom {
+.footer .footerBottom {
 	background-color: #0a1a2a;
 	padding: 15px 10px;
 	text-align: center;
 	color: #fff;
 }
-.footer .footer-bottom small {
+.footer .footerBottom small {
 	font-size: 15px;
 }
-@media screen and (max-width: 800px) {
-	.footer .footer-top {
+@media screen and (max-width: 768px) {
+	.footer .footerTop {
 		width: 90%;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 30px;
 		padding: 35px 0px;
 	}
-	.footer .footer-top .grid-item figure img {
+	.footer .footerTop .footerGridItem span img {
 		width: 100px;
 	}
 }
