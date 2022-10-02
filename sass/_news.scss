@@ -1,0 +1,49 @@
+$color_1: #243c4f;
+$color_2: #0a0d1a;
+$color_3: white;
+$color_4: rgb(129, 194, 145);
+$verdeNews: rgb(129, 194, 145);
+$azulNewsBtn: #243c4f;
+$violetaHoverBtn: rgb(48, 59, 155);
+$border-color_1: #fff;
+
+.news {
+	padding: 80px;
+	background-color: $verdeNews;
+	margin-top: 5px;
+	.content {
+		max-width: 650px;
+		margin: 0 auto;
+		text-align: center;
+		h2 {
+			margin-bottom: 30px;
+			color: $color_1;
+			color: $color_2;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		.form-control {
+			height: 50px;
+			border-color: $border-color_1;
+			border-radius: 4;
+			&:focus {
+				border: 2px solid black;
+			}
+		}
+		.btn {
+			min-height: 50px;
+			border-radius: 4;
+			background-color: $azulNewsBtn;
+			color: $color_3;
+			font-weight: 600;
+			&:hover {
+				background-color: $violetaHoverBtn;
+				color: $color_4;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 588px) {
+
+}

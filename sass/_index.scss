@@ -1,0 +1,45 @@
+$color_1: black;
+$background-color_1: rgba(176, 171, 115, 0.144);
+
+.navbar-brand {
+	img {
+		width: 80px;
+	}
+}
+.navbar {
+	.navbar-nav {
+		.nav-link {
+			color: $color_1;
+			font-size: 1.1em;
+		}
+		margin-top: 0.5em;
+	}
+}
+ul {
+	li {
+		a {
+			&:hover {
+				background-color: $background-color_1;
+				border-radius: 15px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 992px) {
+	.navbar {
+		.container-fluid {
+			flex-direction: column;
+		}
+		.navbar-nav {
+			.nav-item {
+				padding: .5em 1em;
+			}
+		}
+	}
+	.navbar-brand {
+		img {
+			width: 100px;
+			margin-top: 0.5em;
+		}
+	}
+}
