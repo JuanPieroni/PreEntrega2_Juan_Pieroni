@@ -1,3 +1,69 @@
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar .navbar-nav {
+  margin-top: 0.5em;
+}
+.navbar .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.1em;
+}
+
+ul li a:hover {
+  background-color: rgba(176, 171, 115, 0.144);
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 0.5em 1em;
+  }
+  .navbar-brand img {
+    width: 100px;
+    margin-top: 0.5em;
+  }
+}
+.news {
+  padding: 80px;
+  background-color: rgb(129, 194, 145);
+  margin-top: 5px;
+}
+.news .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.news .content h2 {
+  margin-bottom: 30px;
+  color: #243c4f;
+  color: #0a0d1a;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.news .content .form-control {
+  height: 50px;
+  border-color: #fff;
+  border-radius: 4;
+}
+.news .content .form-control:focus {
+  border: 2px solid black;
+}
+.news .content .btn {
+  min-height: 50px;
+  border-radius: 4;
+  background-color: #243c4f;
+  color: white;
+  font-weight: 600;
+}
+.news .content .btn:hover {
+  background-color: rgb(48, 59, 155);
+  color: rgb(129, 194, 145);
+}
+
 .footer {
   width: 100%;
   background-color: #0a141d;
@@ -65,71 +131,5 @@
   }
   .footer .footerTop .footerGridItem span img {
     width: 100px;
-  }
-}
-.news {
-  padding: 80px;
-  background-color: rgb(129, 194, 145);
-  margin-top: 5px;
-}
-.news .content {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-}
-.news .content h2 {
-  margin-bottom: 30px;
-  color: #243c4f;
-  color: #0a0d1a;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.news .content .form-control {
-  height: 50px;
-  border-color: #fff;
-  border-radius: 4;
-}
-.news .content .form-control:focus {
-  border: 2px solid black;
-}
-.news .content .btn {
-  min-height: 50px;
-  border-radius: 4;
-  background-color: #243c4f;
-  color: white;
-  font-weight: 600;
-}
-.news .content .btn:hover {
-  background-color: rgb(48, 59, 155);
-  color: rgb(129, 194, 145);
-}
-
-.navbar-brand img {
-  width: 80px;
-}
-
-.navbar .navbar-nav {
-  margin-top: 0.5em;
-}
-.navbar .navbar-nav .nav-link {
-  color: black;
-  font-size: 1.1em;
-}
-
-ul li a:hover {
-  background-color: rgba(176, 171, 115, 0.144);
-  border-radius: 15px;
-}
-
-@media screen and (min-width: 992px) {
-  .navbar .container-fluid {
-    flex-direction: column;
-  }
-  .navbar .navbar-nav .nav-item {
-    padding: 0.5em 1em;
-  }
-  .navbar-brand img {
-    width: 100px;
-    margin-top: 0.5em;
   }
 }/*# sourceMappingURL=main.css.map */
