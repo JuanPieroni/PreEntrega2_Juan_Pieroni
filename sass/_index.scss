@@ -43,3 +43,41 @@ ul {
 		}
 	}
 }
+
+/* SECTION 1 */
+
+.iconosTitle {
+	margin: auto;
+}
+.iconos {
+	.iconosContainer {
+		display: flex;
+		gap: 20px;
+		justify-content: space-evenly;
+		.iconosItem {
+			text-align: center;
+			padding: 3rem 2rem;
+			img {
+				margin: 1rem 0;
+				height: 5rem;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px ) {
+	.iconos {
+		.iconosContainer {
+			.iconosItem {
+				img {
+					height: 8rem;
+				}
+			}
+		}
+	}
+}
+
+/* SECTION 2 */
+/* Categorias principales */
+
+
+

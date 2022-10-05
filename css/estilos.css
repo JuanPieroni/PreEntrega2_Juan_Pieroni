@@ -4,103 +4,84 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-
-	/* INDEX */
-	/* INDEX-NAVBAR */
 }
-
-/* .navbar-brand img {
-	width: 80px;
-}
-
-@media screen and (min-width: 992px) {
-	.navbar .container-fluid {
-		flex-direction: column;
-	}
-
-	.navbar .navbar-nav .nav-item {
-		padding: .5em 1em;
-	}
-
-	.navbar-brand img {
-		width: 100px;
-		margin-top: 0.5em;
-	}
-}
-
-.navbar .navbar-nav .nav-link {
-	color: black;
-	font-size: 1.1em;
-}
-
-.navbar .navbar-nav {
-	margin-top: 0.5em;
-}
-
-ul li a:hover {
-	background-color: rgba(176, 171, 115, 0.144);
-	border-radius: 15px;
-} */
-/* logo fade  */
-/* .navbar-brand img {
-	opacity: 0;
-	transition: opacity 230ms  ease-in-out ;
-} */
-/* INDEX-CARROUSEL */
 
 .main {
 	height: 1000px;
 }
 
-/* INDEX-NEWSLETTER*/
 
-/* .news {
-	padding: 80px;
-	background-color: rgb(129, 194, 145);
 
-	margin-top: 5px;
-}
-
-.news .content {
-	max-width: 650px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.news .content h2 {
-	margin-bottom: 30px;
-
-	color: #243c4f;
-	color: #0a0d1a;
-	font-weight: 300;
-	text-transform: uppercase;
-}
-
-.news .content .form-control {
-	height: 50px;
-	border-color: #fff;
-	border-radius: 4;
-}
-
-.news .content .form-control:focus {
-	border: 2px solid black;
-}
-
-.news .content .btn {
-	min-height: 50px;
-	border-radius: 4;
-	background-color: #243c4f;
-	color: white;
-	font-weight: 600;
-}
-
-.news .content .btn:hover {
-	background-color: rgb(48, 59, 155);
-	color: rgb(129, 194, 145);
-} */
 
 /* CONTACTO */
 
 h4 {
 	text-transform: uppercase;
+}
+
+
+/* Somos Yaru */
+
+.somos {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	
+}
+
+.somos .somosText img {
+	height: 150px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CATEGORIAS PRINCIPALES */
+
+.titulo {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.categories .box-container {
+    display: grid;
+    height: 388px;
+	
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+
+    align-content: stretch;
+}
+ .box-container .box {
+	justify-content: center;
+ }
+
+.box img {
+	width: 80%;
+	height: 80%;
+	padding: 4px ;
+	border-radius: 50% ;
+	border: 2px solid black;
+
+}
+
+/* productos */
+
+
+.bannerContainer img {
+	margin-top:  10px;
+	width: 100%;
+	padding: 10px;
 }
