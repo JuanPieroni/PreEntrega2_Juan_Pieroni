@@ -15,8 +15,9 @@ $background-color_3: #0a1a2a;
 		margin: auto;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 50px;
+		gap: 50px;
 		padding: 45px 0px;
+		justify-items: center;
 		.footerGridItem {
 			span {
 				width: 100%;

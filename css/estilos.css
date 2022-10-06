@@ -10,15 +10,11 @@
 	height: 1000px;
 }
 
-
-
-
 /* CONTACTO */
 
 h4 {
 	text-transform: uppercase;
 }
-
 
 /* Somos Yaru */
 
@@ -27,26 +23,11 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	
 }
 
 .somos .somosText img {
 	height: 150px;
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* CATEGORIAS PRINCIPALES */
 
@@ -56,32 +37,93 @@ h4 {
 }
 
 .categories .box-container {
-    display: grid;
-    height: 388px;
-	
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+	display: grid;
+	height: 388px;
 
-    align-content: stretch;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 8px;
+
+	align-content: stretch;
 }
- .box-container .box {
+.box-container .box {
 	justify-content: center;
- }
+}
 
 .box img {
 	width: 80%;
 	height: 80%;
-	padding: 4px ;
-	border-radius: 50% ;
+	padding: 4px;
+	border-radius: 50%;
 	border: 2px solid black;
-
 }
+
+
+
+/* SECTION 2 */
+/* categorias principales */
+
+.categorias {
+	background-image: url('https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1');
+	justify-content: center;
+}
+
+.categorias .categoriasItem {
+	max-width: 1200px;
+	padding: 50px;
+	align-content: center;
+	justify-content:  center;
+}
+.categorias .categoriasItem .categoriasItemBox {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.categorias .categoriasItem .categoriasItemBox img {
+	border-radius: 80px;
+	height: 250px;
+	width: 90%;
+	border: 1px solid green;
+}
+.categorias .categoriasItem .categoriasItemBox:hover {
+	transform: scale(1.1, 1.1);
+	transition:    0.5s ;
+}
+
+@media only screen  and (max-width: 576px )  {
+	.categorias .categoriasItem .categoriasItemBox img {
+		 width: 70%;
+	}
+	
+}
+
+h2, h1 {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
 
 /* productos */
 
-
-.bannerContainer img {
-	margin-top:  10px;
+#productos {
+	background-color: aqua;
+	
+	
+}
+.productos .productosCapi {
+	background-image: url('../imagenes/corporal_banner.jpg') ;
+	
+	
+	height: 150px;
 	width: 100%;
-	padding: 10px;
+	
+}
+
+.productos .productosFaci {
+	background-image: ;
+}
+
+.productos .productosCorp {
+	background-image: ;
 }
