@@ -51,7 +51,38 @@ ul li a:hover {
     height: 8rem;
   }
 }
-/* section 2 */
+/* SECTION 2 */
+.categorias {
+  background-image: url("https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1");
+  justify-content: center;
+}
+.categorias .categoriasItem {
+  max-width: 1200px;
+  padding: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.categorias .categoriasItem .categoriasItemBox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.categorias .categoriasItem .categoriasItemBox img {
+  border-radius: 80px;
+  height: 250px;
+  width: 90%;
+  border: 1px solid green;
+}
+.categorias .categoriasItem .categoriasItemBox:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+  .categorias .categoriasItem .categoriasItemBox img {
+    width: 70%;
+  }
+}
 .news {
   padding: 80px;
   background-color: rgb(129, 194, 145);
@@ -64,7 +95,7 @@ ul li a:hover {
 }
 .news .content h2 {
   margin-bottom: 30px;
-  color: #243c4f;
+  color: black;
   color: #0a0d1a;
   font-weight: 300;
   text-transform: uppercase;
@@ -115,12 +146,12 @@ ul li a:hover {
   width: 150px;
 }
 .footer .footerTop .footerGridItem h2 {
-  color: #fff;
+  color: white;
   margin-bottom: 25px;
   font-size: 20px;
 }
 .footer .footerTop .footerGridItem p {
-  color: #efefef;
+  color: white;
   margin-bottom: 10px;
 }
 .footer .footerTop .redSocial a {

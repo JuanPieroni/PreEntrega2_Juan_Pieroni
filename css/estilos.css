@@ -57,73 +57,59 @@ h4 {
 	border: 2px solid black;
 }
 
+ 
 
-
-/* SECTION 2 */
-/* categorias principales */
-
-.categorias {
-	background-image: url('https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1');
-	justify-content: center;
-}
-
-.categorias .categoriasItem {
-	max-width: 1200px;
-	padding: 50px;
-	align-content: center;
-	justify-content:  center;
-}
-.categorias .categoriasItem .categoriasItemBox {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-.categorias .categoriasItem .categoriasItemBox img {
-	border-radius: 80px;
-	height: 250px;
-	width: 90%;
-	border: 1px solid green;
-}
-.categorias .categoriasItem .categoriasItemBox:hover {
-	transform: scale(1.1, 1.1);
-	transition:    0.5s ;
-}
-
-@media only screen  and (max-width: 576px )  {
-	.categorias .categoriasItem .categoriasItemBox img {
-		 width: 70%;
-	}
-	
-}
-
-h2, h1 {
+h2,
+h1 {
 	display: block;
 	text-align: center;
 	text-transform: uppercase;
-	
 }
-
 
 /* productos */
 
-#productos {
-	background-color: aqua;
-	
-	
-}
-.productos .productosCapi {
-	background-image: url('../imagenes/corporal_banner.jpg') ;
-	
-	
+.productos {
 	height: 150px;
-	width: 100%;
-	
+	margin-bottom: 20px;
+}
+.productos .productosCorp {
+	background-image: url('../imagenes/corporal_banner.jpg');
+	background-position: 70% 40%;
+	background-size: cover;
+	height: 150px;
 }
 
 .productos .productosFaci {
-	background-image: ;
+	background-image: url('../imagenes/banner_capilar.jpg');
+	background-position: 70% 30%;
+	background-size: cover;
+	height: 150px;
 }
 
-.productos .productosCorp {
-	background-image: ;
+.productos .productosCapi {
+	background-image: url('../imagenes/banner_facial.jpg');
+	background-position: 70% 30%;
+	background-size: cover;
+	height: 150px;
+}
+
+/* Grid Prod */
+
+.prodColor {
+	color: hsl(155, 71%, 32%);
+}
+
+/* Nosotros */
+
+
+
+
+/* recicla */
+
+.recicla .reciclaBanner {
+	background-image: url('../imagenes/banner-reciclaje.png');
+	background-position: 70% 40%;
+	background-size: cover;
+	height: 150px;
+	margin-bottom: 5rem;
 }

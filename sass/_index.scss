@@ -77,8 +77,46 @@ ul {
 	}
 }
 
+/* SECTION 2 */
 
-/* section 2 */
+
+.categorias {
+	background-image: url('https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1');
+	justify-content: center;
+	.categoriasItem {
+		max-width: 1200px;
+		padding: 50px;
+		align-content: center;
+		justify-content: center;
+		.categoriasItemBox {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			img {
+				border-radius: 80px;
+				height: 250px;
+				width: 90%;
+				border: 1px solid green;
+			}
+			&:hover {
+				transform: scale(1.1, 1.1);
+				transition: 0.5s;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.categorias {
+		.categoriasItem {
+			.categoriasItemBox {
+				img {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
 
 
 
