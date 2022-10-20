@@ -5,6 +5,15 @@
   margin-top: 20px;
 }
 
+.span, .section2 span, .iconos .iconosTitle span {
+  background: rgb(129, 194, 145);
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  -webkit-clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+          clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
 /* HEADER - NAVBAR */
 .navbar-brand img {
   width: 80px;
@@ -66,45 +75,39 @@ ul li a:hover {
 }
 
 /* SECTION 1 */
-.iconos .iconosTitle, .section2 .iconosTitle {
+.iconos .iconosTitle {
   text-align: center;
   margin: auto;
   padding-left: 10%;
   padding-right: 10%;
 }
-.iconos .iconosTitle span, .section2 .iconosTitle span {
-  background: rgb(129, 194, 145);
-  color: white;
-  display: inline-block;
-  padding: 0.5rem 2rem;
-  -webkit-clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-          clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-}
-.iconos .iconosContainer, .section2 .iconosContainer {
+.iconos .iconosContainer {
   display: flex;
   gap: 20px;
   justify-content: space-evenly;
   padding-left: 20%;
   padding-right: 20%;
 }
-.iconos .iconosContainer .iconosItem, .section2 .iconosContainer .iconosItem {
+.iconos .iconosContainer .iconosItem {
   text-align: center;
   padding: 3rem 2rem;
 }
-.iconos .iconosContainer .iconosItem img, .section2 .iconosContainer .iconosItem img {
+.iconos .iconosContainer .iconosItem img {
   margin: 1rem 0;
   height: 5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .iconos .iconosContainer .iconosItem img, .section2 .iconosContainer .iconosItem img {
+  .iconos .iconosContainer .iconosItem img {
     height: 8rem;
   }
 }
 /* SECTION 2  */
 .categorias {
-  background-image: url("https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1");
+  background-image: url("/imagenes/bannerAgua.jpg");
   justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
 }
 .categorias .categoriasItem {
   max-width: 1200px;
@@ -124,8 +127,8 @@ ul li a:hover {
   border: 1px solid green;
 }
 .categorias .categoriasItem .categoriasItemBox:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.5s;
+  transform: scale(1.05, 1.05);
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 576px) {
@@ -203,6 +206,7 @@ ul li a:hover {
 .footer .footerTop .footerGridItem p {
   color: white;
   margin-bottom: 10px;
+  text-align: center;
 }
 .footer .footerTop .redSocial a {
   display: inline-block;
@@ -271,4 +275,11 @@ ul li a:hover {
 
 h4 {
   text-transform: uppercase;
+}
+
+.copete {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px;
+  border-top-left-radius: 4px;
 }/*# sourceMappingURL=main.css.map */

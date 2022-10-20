@@ -24,3 +24,11 @@ $border-color_1: #fff;
 	height: 160px;
 	margin-top: 20px;
 }
+
+.span {
+	background: $verdeNews;
+	color: white;
+	display: inline-block;
+	padding: .5rem 2rem;
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
