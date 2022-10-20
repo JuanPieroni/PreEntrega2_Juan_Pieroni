@@ -1,1 +1,41 @@
+/* PRODUCTOS*/
 
+.productos {
+	height: 150px;
+	margin-bottom: 20px;
+	.productosCorp {
+		@extend .banner;
+		background-image: url('../imagenes/corporal_banner.jpg');
+		background-position: 70% 45%;
+	}
+	.productosFaci {
+		@extend .banner;
+		background-image: url('../imagenes/banner_capilar.jpg');
+	}
+	.productosCapi {
+		@extend .banner;
+		background-image: url('../imagenes/banner_facial.jpg');
+	}
+}
+
+/* QUIENES SOMOS */
+
+/* RECICLA */
+
+.recicla .reciclaBanner {
+	@extend .banner;
+	background-image: url('../imagenes/banner-reciclaje.png');
+}
+
+/* CONTACTO */
+.conta {
+	background: url('/imagenes/formula_3.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h4 {
+	text-transform: uppercase;
+}

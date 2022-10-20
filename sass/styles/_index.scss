@@ -1,6 +1,7 @@
 $color_1: black;
-$background-color_1: rgba(176, 171, 115, 0.144);
+$hovermenu: rgba(192, 186, 119, 0.144);
 
+/* HEADER - NAVBAR */
 .navbar-brand {
 	img {
 		width: 80px;
@@ -19,7 +20,7 @@ ul {
 	li {
 		a {
 			&:hover {
-				background-color: $background-color_1;
+				background-color: $hovermenu;
 				border-radius: 15px;
 			}
 		}
@@ -44,17 +45,62 @@ ul {
 	}
 }
 
+.menu-bar nav {
+	background-image: linear-gradient(180deg, aquamarine, hwb(43 82% 10%));
+	margin-bottom: 2rem;
+}
+
+/* CARROUSEL */
+
+@media screen and (max-width: $mobile) {
+	#carrousel .carousel-indicators {
+		display: none;
+	}
+}
+
+/* SOMOS YARU */
+
+.somos {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.somos .somosText {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.somos .somosText img {
+	height: auto;
+	max-width: 30%;
+	margin-bottom: 2rem;
+}
+
 /* SECTION 1 */
 
-
-.iconosTitle {
-	margin: auto;
-}
 .iconos {
+	.iconosTitle {
+		text-align: center;
+		margin: auto;
+		padding-left: 10%;
+		padding-right: 10%;
+
+		span {
+			background: $verdeNews;
+			color: white;
+			display: inline-block;
+			padding: .5rem 2rem;
+			clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+		}
+	}
 	.iconosContainer {
 		display: flex;
 		gap: 20px;
 		justify-content: space-evenly;
+		padding-left: 20%;
+		padding-right: 20%;
 		.iconosItem {
 			text-align: center;
 			padding: 3rem 2rem;
@@ -65,7 +111,7 @@ ul {
 		}
 	}
 }
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 768px) {
 	.iconos {
 		.iconosContainer {
 			.iconosItem {
@@ -77,8 +123,10 @@ ul {
 	}
 }
 
-/* SECTION 2 */
-
+/* SECTION 2  */
+.section2 {
+	@extend .iconos;
+}
 
 .categorias {
 	background-image: url('https://previews.123rf.com/images/littlepaw/littlepaw1603/littlepaw160300016/56063349-green-leaves-background-eco-organic-seamless-pattern-illustration.jpg?fj=1');
@@ -116,8 +164,3 @@ ul {
 		}
 	}
 }
-
-
-
-
-
