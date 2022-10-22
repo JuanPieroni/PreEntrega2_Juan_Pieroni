@@ -22,6 +22,9 @@ ul {
 			&:hover {
 				background-color: $hovermenu;
 				border-radius: 15px;
+				@media screen and (max-width: $mobile) {
+					background-color: transparent;
+				}
 			}
 		}
 	}
@@ -65,17 +68,15 @@ ul {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-}
-
-.somos .somosText {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.somos .somosText img {
-	height: auto;
-	max-width: 30%;
-	margin-bottom: 2rem;
+	.somosText {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	img {
+		height: auto;
+		max-width: 30%;
+		margin-bottom: 2rem;
+	}
 }
 
 /* SECTION 1 */
@@ -119,8 +120,20 @@ ul {
 }
 
 /* SECTION 2  */
-.section2 span {
-	@extend .span;
+
+.section2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	span {
+		@extend .span;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.section2 {
+		flex-direction: column;
+	}
 }
 
 .categorias {
@@ -128,8 +141,9 @@ ul {
 	justify-content: center;
 	background-size: cover;
 	margin-bottom: 30px;
+	background-attachment: fixed;
 	.categoriasItem {
-		max-width: 1200px;
+		max-width: 1250px;
 		padding: 50px;
 		align-content: center;
 		justify-content: center;
@@ -150,7 +164,7 @@ ul {
 		}
 	}
 }
-@media only screen and (max-width: $mobile) {
+@media only screen and (min-width: $desktop) {
 	.categorias {
 		.categoriasItem {
 			.categoriasItemBox {
@@ -159,5 +173,37 @@ ul {
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.categorias {
+		.categoriasItem {
+			.categoriasItemBox {
+				img {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+/* SECTION 3 */
+
+.procontainer {
+	padding: 3em;
+	display: grid;
+	gap: 2em;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+	.quote {
+		padding: 1em;
+		border-radius: .3em;
+		box-shadow: 10px 10px 30px black;
+		img {
+			width:  100%;
+		}
+
+	
 	}
 }

@@ -4,8 +4,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:  sans-serif;
+	font-family: sans-serif;
 }
+
 body {
 	overflow-x: hidden;
 }
@@ -27,7 +28,7 @@ h1 {
 
 /* hr */
 
-.style-six {
+.separador {
 	padding: 0;
 	border: none;
 	height: 1px;
@@ -38,3 +39,19 @@ h1 {
 	color: #098652;
 	text-align: center;
 }
+
+.section2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+	.section2 {
+		flex-direction: column;
+	}
+}
+
+/* BTN */
+
+

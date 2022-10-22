@@ -31,6 +31,11 @@ ul li a:hover {
   background-color: rgba(192, 186, 119, 0.144);
   border-radius: 15px;
 }
+@media screen and (max-width: 576px) {
+  ul li a:hover {
+    background-color: transparent;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .navbar .container-fluid {
@@ -62,13 +67,11 @@ ul li a:hover {
   flex-direction: column;
   text-align: center;
 }
-
 .somos .somosText {
   padding-left: 10%;
   padding-right: 10%;
 }
-
-.somos .somosText img {
+.somos img {
   height: auto;
   max-width: 30%;
   margin-bottom: 2rem;
@@ -103,14 +106,25 @@ ul li a:hover {
   }
 }
 /* SECTION 2  */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .section2 {
+    flex-direction: column;
+  }
+}
 .categorias {
   background-image: url("/imagenes/bannerAgua.jpg");
   justify-content: center;
   background-size: cover;
   margin-bottom: 30px;
+  background-attachment: fixed;
 }
 .categorias .categoriasItem {
-  max-width: 1200px;
+  max-width: 1250px;
   padding: 50px;
   align-content: center;
   justify-content: center;
@@ -131,11 +145,32 @@ ul li a:hover {
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 1200px) {
   .categorias .categoriasItem .categoriasItemBox img {
     width: 70%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .categorias .categoriasItem .categoriasItemBox img {
+    width: 70%;
+  }
+}
+/* SECTION 3 */
+.procontainer {
+  padding: 3em;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.procontainer .quote {
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: 10px 10px 30px black;
+}
+.procontainer .quote img {
+  width: 100%;
+}
+
 .news {
   padding: 80px;
   background-color: rgb(129, 194, 145);
