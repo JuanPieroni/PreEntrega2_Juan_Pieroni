@@ -3,20 +3,65 @@
 .productos {
 	height: 150px;
 	margin-bottom: 20px;
+	position: relative;
+
 	.productosCorp {
 		@extend .banner;
 		background-image: url('../imagenes/corporal_banner.jpg');
 		background-position: 70% 45%;
+		position: relative;
 	}
-	.productosFaci {
+	.productosCapi {
 		@extend .banner;
 		background-image: url('../imagenes/banner_capilar.jpg');
 	}
-	.productosCapi {
+	.productosFaci {
 		@extend .banner;
 		background-image: url('../imagenes/banner_facial.jpg');
 	}
 }
+
+.productosText {
+	display: inline-block;
+	padding: .6rem;
+	font-size: 2.5rem;
+	letter-spacing: .8rem;
+	margin-left: 5px;
+	/* font-family: amatic sc; */
+	color: white;
+	font-weight: bolder;
+	mix-blend-mode: overlay;
+	text-shadow: 5px 10px 10px rgba(0, 0, 0, 5);
+}
+
+@media screen and (max-width: $tablet) and (min-width: $mobile) {
+	.productosText {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.productosText {
+		letter-spacing: 0.5rem;
+		font-size: 1.5rem;
+	}
+}
+
+ 
+
+/* efecto card ( quedo medio choto ) */
+/* AGREGAR POPOVER para modo de uso - instalar libreria y script */
+/* .card {
+	overflow: hidden;
+}
+
+.card img {
+	transition: 1s ease; 
+}
+
+.card:hover img {
+	transform: scale(1.4);
+} */
 
 /* QUIENES SOMOS */
 
@@ -29,7 +74,8 @@
 
 /* CONTACTO */
 .conta {
-	background: url('/imagenes/formula_3.jpg') no-repeat center center fixed;
+	background: url('/repo_2da_Yaru/imagenes/formula_3.jpg') no-repeat center center fixed;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

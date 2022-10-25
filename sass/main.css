@@ -1,4 +1,4 @@
-.banner, .recicla .reciclaBanner, .productos .productosCapi, .productos .productosFaci, .productos .productosCorp {
+.banner, .recicla .reciclaBanner, .productos .productosFaci, .productos .productosCapi, .productos .productosCorp {
   background-position: 70% 30%;
   background-size: cover;
   height: 160px;
@@ -50,7 +50,8 @@ ul li a:hover {
   }
 }
 .menu-bar nav {
-  background-image: linear-gradient(180deg, aquamarine, hwb(43 82% 10%));
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(153, 208, 161) 34%, rgb(190, 183, 110) 64%, rgb(253, 187, 45) 100%);
   margin-bottom: 2rem;
 }
 
@@ -117,7 +118,7 @@ ul li a:hover {
   }
 }
 .categorias {
-  background-image: url("/imagenes/bannerAgua.jpg");
+  background-image: url("/repo_2da_Yaru/imagenes/bannerAgua.jpg");
   justify-content: center;
   background-size: cover;
   margin-bottom: 30px;
@@ -135,10 +136,10 @@ ul li a:hover {
   text-align: center;
 }
 .categorias .categoriasItem .categoriasItemBox img {
-  border-radius: 80px;
+  border-radius: 140px;
   height: 250px;
   width: 90%;
-  border: 1px solid green;
+  border: 1px solid rgb(8, 1, 34);
 }
 .categorias .categoriasItem .categoriasItemBox:hover {
   transform: scale(1.05, 1.05);
@@ -163,14 +164,21 @@ ul li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .procontainer .quote {
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 0.3em;
-  box-shadow: 10px 10px 30px black;
+  /* box-shadow: 10px 10px 30px black; */
+  box-shadow: 0px 0px 10px rgb(0, 0, 0) inset;
 }
 .procontainer .quote img {
   width: 100%;
 }
 
+/* @media screen and (max-width: $mobile)  {
+	.procontainer {
+		grid-template-columns: 2fr 2fr;
+		}
+}
+ */
 .news {
   padding: 80px;
   background-color: rgb(129, 194, 145);
@@ -253,7 +261,7 @@ ul li a:hover {
   margin-right: 10px;
   background-color: #0d2033;
   text-align: center;
-  transition: all 2s ease;
+  transition: 2s ease;
   border-radius: 10px;
 }
 .footer .footerTop .redSocial a:hover {
@@ -284,18 +292,57 @@ ul li a:hover {
 .productos {
   height: 150px;
   margin-bottom: 20px;
+  position: relative;
 }
 .productos .productosCorp {
   background-image: url("../imagenes/corporal_banner.jpg");
   background-position: 70% 45%;
-}
-.productos .productosFaci {
-  background-image: url("../imagenes/banner_capilar.jpg");
+  position: relative;
 }
 .productos .productosCapi {
+  background-image: url("../imagenes/banner_capilar.jpg");
+}
+.productos .productosFaci {
   background-image: url("../imagenes/banner_facial.jpg");
 }
 
+.productosText {
+  display: inline-block;
+  padding: 0.6rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+  margin-left: 5px;
+  /* font-family: amatic sc; */
+  color: white;
+  font-weight: bolder;
+  mix-blend-mode: overlay;
+  text-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .productosText {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .productosText {
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+/* efecto card ( quedo medio choto ) */
+/* AGREGAR POPOVER para modo de uso - instalar libreria y script */
+/* .card {
+	overflow: hidden;
+}
+
+.card img {
+	transition: 1s ease; 
+}
+
+.card:hover img {
+	transform: scale(1.4);
+} */
 /* QUIENES SOMOS */
 /* RECICLA */
 .recicla .reciclaBanner {
@@ -304,7 +351,7 @@ ul li a:hover {
 
 /* CONTACTO */
 .conta {
-  background: url("/imagenes/formula_3.jpg") no-repeat center center fixed;
+  background: url("/repo_2da_Yaru/imagenes/formula_3.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
