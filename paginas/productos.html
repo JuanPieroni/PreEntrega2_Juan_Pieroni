@@ -73,23 +73,25 @@
         </div>
         <section>
             <div class="row px-4">
-                <div class="card-group">
-                    <div class="card col-md-4 col-lg-3 col-xs-12 mx-1  text-center">
-                        <img src="../imagenes/combo2 (1).jpg" class="card-img-top" alt="...">
+                <div class="card-group  ">
+                    <div class="card col-md-4 col-lg-3 col-xs-12    text-center">
+                        <img src="../imagenes/shampooSolido1.jpeg" class="card-img-top" alt="...">
                         <div class="card-body prodColorCard">
                             <h5 class="card-title prodColor">SHAMPOO SOLIDO</h5>
                             <p class="card-text prodColor">Lorem ipsum dolor sit.</p>
-                            <button type="button" class="  btn btn-secondary "  data-bs-container ="body"
-                                title="Modo de Uso" data-bs-toggle="popover" data-bs-placement="bottom"
-                                data-bs-content="CON EL CABELLO HÚMEDO FROTAR LA PASTILLA DIRECTAMENTE SOBRE EL CUERO CABELLUDO,USAR UNA VEZ LA SEMANA.">
-                                MAS INFO
-                            </button>
+                            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                data-bs-placement="bottom" title="  Modo de uso" data-bs-trigger="hover focus"
+                                data-bs-content="CON EL CABELLO HÚMEDO FROTAR LA PASTILLA DIRECTAMENTE SOBRE EL CUERO CABELLUDO,
+
+                        USAR UNA VEZ LA SEMANA.">
+                                <button class="btn btn-primary" type="button" disabled>Mas Info</button>
+                            </span>
                         </div>
                     </div>
 
 
-                    <div class="card col-md-4 col-lg-3 col-xs-12 mx-2 text-center">
-                        <img src="../imagenes/combo2 (1).jpg" class="card-img-top" alt="...">
+                    <div class="card col-md-4 col-lg-3 col-xs-12   text-center">
+                        <img class="card-img-top" src="../imagenes/combo2 (1).jpg" alt="...">
                         <div class="card-body prodColorCard">
                             <h5 class="card-title prodColorLetter">ACONDICIONADOR</h5>
                             <p class="card-text prodColorLetter">Lorem ipsum dolor sit.</p>
@@ -103,15 +105,18 @@
                         </div>
 
                     </div>
-                    <div class="card col-md-4 col-lg-6 col-xs-12 text-lg-center text-sm-start">
-                        <img src="../imagenes/combo2 (1).jpg" class="card-img-top" alt="...">
+                    <div class="card   col-md-4 col-lg-6 col-xs-12 text-center  ">
+                        <img src="../imagenes/essential-oil-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body prodColorCard">
-                            <h5 class="card-title prodColorLetter">ACEITE ESCENCIAL</h5>
+                            <h5 class="card-title prodColorLetter">ACEITE ESENCIAL</h5>
                             <p class="card-text prodColorLetter">Lorem ipsum dolor sit.</p>
-                            <a tabindex="1" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-placement="left"
-                                data-bs-trigger="focus" data-bs-title="Mas Info"
-                                data-bs-content="And here's some amazing content. It's very engaging. Right?">Mas
-                                Info</a>
+                            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                data-bs-placement="bottom" title="Modo de uso" data-bs-trigger="hover focus"
+                                data-bs-content="CON EL CABELLO HÚMEDO FROTAR LA PASTILLA DIRECTAMENTE SOBRE EL CUERO CABELLUDO,
+
+                        USAR UNA VEZ LA SEMANA.">
+                                <button class="btn btn-primary" type="button" disabled>Mas Info</button>
+                            </span>
 
                         </div>
 
@@ -132,15 +137,15 @@
             <section>
                 <div class="row px-4">
                     <div class="card-group text-center">
-                        <div class="card  col-md-4 col-lg-3 col-xs-12 mx-1">
-                            <img src="../imagenes/combo2 (1).jpg" class="card-img-top" alt="...">
+                        <div class="card  col-md-4 col-lg-3 col-xs-12  ">
+                            <img src=" " class="card-img-top" alt="...">
                             <div class="card-body prodColorCard">
                                 <h5 class="card-title prodColor">CREMA DE MANOS</h5>
                                 <p class="card-text prodColor">Elaborada con aceite de almendras y girasol.</p>
                             </div>
 
                         </div>
-                        <div class="card  col-md-4 col-lg-3 col-xs-12 mx-2">
+                        <div class="card  col-md-4 col-lg-3 col-xs-12  ">
                             <img src="../imagenes/combo2 (1).jpg" class="card-img-top" alt="...">
                             <div class="card-body prodColorCard">
                                 <h5 class="card-title prodColorLetter">UNGUENTO DE CANNABIS</h5>
@@ -256,11 +261,11 @@
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
     </script>
-<script>
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-  trigger: 'focus'
-})
-</script>
+    <script>
+        const popover = new bootstrap.Popover('.popover-dismiss', {
+            trigger: 'focus'
+        })
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>

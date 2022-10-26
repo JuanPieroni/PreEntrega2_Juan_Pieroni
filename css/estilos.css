@@ -7,8 +7,9 @@
 	font-family: sans-serif;
 }
 
-body {
+body,html {
 	overflow-x: hidden;
+	height: 100%;
 }
 
 .main {

@@ -47,6 +47,14 @@
 	}
 }
 
+.card img {
+	filter: brightness(1.25);
+}
+
+.card-img-top {
+    flex-grow: 1;
+    object-fit:contain;
+}
  
 
 /* efecto card ( quedo medio choto ) */
@@ -65,11 +73,74 @@
 
 /* QUIENES SOMOS */
 
+.nosotrosText {
+	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 30px;
+}
+
 /* RECICLA */
 
 .recicla .reciclaBanner {
 	@extend .banner;
 	background-image: url('../imagenes/banner-reciclaje.png');
+	background-color: #555;
+	box-shadow: 0 0 20px 2px #555;
+}
+
+.overlay {
+	position: relative;
+	background-size: cover;
+	margin-top: 25px;
+}
+.overlay h1 {
+	background-color: #fff;
+	color: #000;
+	mix-blend-mode: luminosity;
+	position: absolute;
+
+	color: blue;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 16px;
+	border-radius: 8px;
+	font-family: arial;
+	font-size: 3em;
+	margin: 0;
+	opacity: 0.5;
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet) {
+	.overlay h1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: $tablet) and (min-width: $mobile) {
+	.overlay h1 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.overlay h1 {
+		font-size: 1em;
+		opacity: 0.9;
+	}
+}
+
+/* para hacer esta verga responsive , media query con el font size */
+/*   .overlay h1:last-child {
+	mix-blend-mode: normal;
+	color: transparent;
+	background: none;
+	box-shadow: 0 0 16px #000, 0 0 32px #000;
+  } */
+
+.overlay img {
+	width: 100%;
 }
 
 /* CONTACTO */
@@ -80,6 +151,16 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.contacto .contactoBanner {
+	@extend .banner;
+	background-image: url('../imagenes/bannercontacto1.jpg');
+	background-position: 10% 85%;
+	background-color: #555;
+	box-shadow: 0 0 20px 2px #555;
+	margin: 0;
+	padding: 0;
 }
 
 h4 {

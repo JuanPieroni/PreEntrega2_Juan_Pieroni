@@ -1,6 +1,6 @@
 $mobile: 576px;
 $tablet: 768px;
-$desktop: 1200px;
+$desktop: 1023px;
  
 
 $color1: #fff;
@@ -24,10 +24,12 @@ $border-color_1: #fff;
 	background-size: cover;
 	height: 160px;
 	margin-top: 20px;
+	background-color: #555;
+    box-shadow: 0 0 20px 2px #555;
 }
 
 .span {
-	background: $verdeNews;
+	background: hsl(152, 68%, 28%);
 	color: white;
 	display: inline-block;
 	padding: .5rem 2rem;
