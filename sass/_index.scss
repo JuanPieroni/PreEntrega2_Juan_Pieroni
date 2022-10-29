@@ -19,16 +19,19 @@ $hovermenu: rgba(192, 186, 119, 0.144);
 ul {
 	li {
 		a {
-			&:hover {
-				background-color: $hovermenu;
-				border-radius: 15px;
-				@media screen and (max-width: $mobile) {
-					background-color: transparent;
-				}
+			font-family: 'Lato', sans-serif;
+		}
+
+		&:hover {
+			background-color: $hovermenu;
+			border-radius: 15px;
+			@media screen and (max-width: $mobile) {
+				background-color: transparent;
 			}
 		}
 	}
 }
+
 @media screen and (min-width: 992px) {
 	.navbar {
 		.container-fluid {
@@ -47,31 +50,26 @@ ul {
 		}
 	}
 }
+.menu-bar nav {
+	background: #c1dfc4;
+	background: -webkit-linear-gradient(to left, rgba(193, 223, 196, 0.45), rgba(222, 236, 221, 0.45));
+	margin-bottom: 2rem;
 
+	box-shadow: 0 0 20px 2px #555;
+}
+
+/* CARROUSEL */
 #carrousel {
 	background-color: #555;
 	box-shadow: 0 0 20px 2px #555;
 }
-.menu-bar nav {
-	background: rgb(34, 193, 195);
-	background: linear-gradient(
-		0deg,
-		rgba(34, 193, 195, 1) 0%,
-		rgba(153, 208, 161, 1) 34%,
-		rgba(190, 183, 110, 1) 64%,
-		rgba(253, 187, 45, 1) 100%
-	);
-	margin-bottom: .9rem;
-}
-
-/* CARROUSEL */
 
 @media screen and (max-width: $mobile) {
 	#carrousel .carousel-indicators {
 		display: none;
 	}
 }
- 
+
 /* SOMOS YARU */
 
 .somos {
@@ -82,11 +80,10 @@ ul {
 	.somosText {
 		padding-left: 10%;
 		padding-right: 10%;
-		
 	}
 	p {
 		color: black;
-		}
+	}
 	img {
 		height: auto;
 		max-width: 30%;
@@ -110,8 +107,9 @@ ul {
 		display: flex;
 		gap: 20px;
 		justify-content: space-evenly;
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-bottom: -30px;
 		.iconosItem {
 			text-align: center;
 			padding: 3rem 2rem;
@@ -140,6 +138,8 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2.5rem;
+
 	span {
 		@extend .span;
 	}
@@ -153,8 +153,6 @@ ul {
 
 .categorias {
 	background: url('../imagenes/bannerAgua.jpg');
-	 
-	/* background-position: 70% 30%; */
 
 	justify-content: center;
 	background-size: cover;
@@ -226,13 +224,65 @@ ul {
 	}
 }
 
+/* sacar lo que no suma */
 
- @media screen and (max-width: $mobile)  {
+.containerr {
+	position: relative;
+	width: auto;
+}
+
+.image {
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.containerr:hover .image {
+	opacity: 0.3;
+}
+
+.containerr:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: #04aa6d;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+/* sacar lo que no suma arriba */
+
+@media screen and (max-width: $mobile) {
 	.procontainer {
-		 
-		grid-template-columns: 2fr 2fr;
+		grid-template-columns: 1fr 1fr;
+
 		gap: .6em;
 		box-shadow: 0px 0px 0px rgb(0, 0, 0) inset;
-		 
-		}
+	}
+	.proItem:nth-child(3) {
+		grid-column: 1 / 3;
+	}
+	.proItem:nth-child(6) {
+		grid-column: 1 / 3;
+	}
+}
+
+/* hr */
+
+.separador {
+	display: flex;
+	justify-content: center;
+	margin: 35px;
 }

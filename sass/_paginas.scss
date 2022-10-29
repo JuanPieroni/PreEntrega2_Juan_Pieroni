@@ -48,7 +48,11 @@
 }
 
 .card-text {
-	text-align: justify;
+	text-align: center;
+}
+
+.textCardSec {
+	color: hsl(155, 71%, 32%);
 }
 
 /* .card img {
@@ -81,11 +85,71 @@
 
 /* QUIENES SOMOS */
 
+h2.linea {
+	position: relative;
+	z-index: 1;
+	padding: 10px;
+	margin-top: 1rem;
+	&:before {
+		border-top: 2px solid $verdeNews;
+		content: "";
+		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 95%;
+		z-index: -1;
+	}
+	span {
+		background: white;
+		padding: 0 15px;
+	}
+}
+
+.quienes_somos_banner {
+	@extend .banner;
+	background-image: url('../imagenes/bannerEugeCrop.jpg');
+	filter: brightness(1.5);
+	filter: contrast(95%);
+	background-color: #555;
+	box-shadow: 0 0 5px 5px #215125;
+    
+ 
+}
+.quienes_somos_text {
+	display: inline-block;
+	padding: .6rem;
+	font-size: 2.5rem;
+	letter-spacing: .8rem;
+	margin-left: 5px;
+	/* font-family: amatic sc; */
+	color: rgba(255, 255, 255, 0.815);
+	font-weight: bolder;
+
+	text-shadow: 5px 10px 10px rgba(0, 0, 0, 5);
+}
+
+@media screen and (max-width: $tablet) and (min-width: $mobile) {
+	.quienes_somos_text {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.quienes_somos_text {
+		letter-spacing: 0.5rem;
+		font-size: 1.5rem;
+	}
+}
+
 .nosotrosText {
 	text-align: justify;
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-top: 30px;
+	font-weight: 900;
 }
 
 /* RECICLA */
@@ -119,7 +183,9 @@
 	margin: 0;
 	opacity: 0.5;
 }
-
+.overlay img {
+	width: 100%;
+}
 @media screen and (max-width: $desktop) and (min-width: $tablet) {
 	.overlay h1 {
 		font-size: 2em;
@@ -139,6 +205,12 @@
 	}
 }
 
+.reciclaText {
+	@extend .nosotrosText
+}
+
+
+
 /* para hacer esta verga responsive , media query con el font size */
 /*   .overlay h1:last-child {
 	mix-blend-mode: normal;
@@ -147,22 +219,20 @@
 	box-shadow: 0 0 16px #000, 0 0 32px #000;
   } */
 
-.overlay img {
-	width: 100%;
-}
+
 
 /* CONTACTO */
-.main_contact_container {
-	background: url('/repo_2da_Yaru/imagenes/formula_2.jpg') no-repeat center center fixed;
+/* .main_contact_container { */
+	/* background: url('/repo_2da_Yaru/imagenes/formula_2.jpg') no-repeat center center fixed; */
 
-	-webkit-background-size: cover;
+/* 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-color: #555;
-	box-shadow: 0 0 20px 2px #555;
+	box-shadow: 0 0 20px 2px #555; 
 }
-
+*/
 .contSubtitulo h4 {
 	margin-left: 10%;
 	margin-right: 10%;

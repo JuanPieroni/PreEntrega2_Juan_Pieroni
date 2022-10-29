@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+ 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body,
 html {
 	overflow-x: hidden;
-	height: 100%;
+	 
 	scroll-behavior: smooth;
 }
 
 h2,
-h1 {
+h1, h3 {
 	display: block;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.prodColor {
-	color: hsl(155, 71%, 32%);
-}
+
 
 .section2 {
 	display: flex;

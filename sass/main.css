@@ -1,10 +1,16 @@
-.banner, .contacto .contactoBanner, .recicla .reciclaBanner, .productos .productosFaci, .productos .productosCapi, .productos .productosCorp {
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poiret+One&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@100;400&family=Poiret+One&family=Roboto:wght@100&display=swap");
+.banner, .contacto .contactoBanner, .recicla .reciclaBanner, .quienes_somos_banner, .productos .productosFaci, .productos .productosCapi, .productos .productosCorp {
   background-position: 70% 30%;
   background-size: cover;
   height: 160px;
   margin-top: 20px;
   background-color: #555;
   box-shadow: 0 0 20px 2px #555;
+  border-radius: 6px;
+  margin-left: 0.3%;
 }
 
 .span, .section2 span, .iconos .iconosTitle span {
@@ -14,16 +20,7 @@
   padding: 0.5rem 2rem;
   -webkit-clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
           clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-}
-
-/* hr */
-.separador {
-  padding: 0;
-  border: #0a141d;
-  height: 1px;
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  color: hsl(0deg, 0%, 0%);
-  text-align: center;
+  margin-top: 0.5rem;
 }
 
 /* HEADER - NAVBAR */
@@ -39,12 +36,15 @@
   font-size: 1.1em;
 }
 
-ul li a:hover {
+ul li a {
+  font-family: "Lato", sans-serif;
+}
+ul li:hover {
   background-color: rgba(192, 186, 119, 0.144);
   border-radius: 15px;
 }
 @media screen and (max-width: 576px) {
-  ul li a:hover {
+  ul li:hover {
     background-color: transparent;
   }
 }
@@ -61,18 +61,19 @@ ul li a:hover {
     margin-top: 0.5em;
   }
 }
+.menu-bar nav {
+  background: #c1dfc4;
+  background: -webkit-linear-gradient(to left, rgba(193, 223, 196, 0.45), rgba(222, 236, 221, 0.45));
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px 2px #555;
+}
+
+/* CARROUSEL */
 #carrousel {
   background-color: #555;
   box-shadow: 0 0 20px 2px #555;
 }
 
-.menu-bar nav {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(153, 208, 161) 34%, rgb(190, 183, 110) 64%, rgb(253, 187, 45) 100%);
-  margin-bottom: 0.9rem;
-}
-
-/* CARROUSEL */
 @media screen and (max-width: 576px) {
   #carrousel .carousel-indicators {
     display: none;
@@ -109,8 +110,9 @@ ul li a:hover {
   display: flex;
   gap: 20px;
   justify-content: space-evenly;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: -30px;
 }
 .iconos .iconosContainer .iconosItem {
   text-align: center;
@@ -131,6 +133,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.5rem;
 }
 @media screen and (max-width: 576px) {
   .section2 {
@@ -139,7 +142,6 @@ ul li a:hover {
 }
 .categorias {
   background: url("../imagenes/bannerAgua.jpg");
-  /* background-position: 70% 30%; */
   justify-content: center;
   background-size: cover;
   margin-bottom: 30px;
@@ -194,13 +196,65 @@ ul li a:hover {
   width: 100%;
 }
 
+/* sacar lo que no suma */
+.containerr {
+  position: relative;
+  width: auto;
+}
+
+.image {
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerr:hover .image {
+  opacity: 0.3;
+}
+
+.containerr:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* sacar lo que no suma arriba */
 @media screen and (max-width: 576px) {
   .procontainer {
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.6em;
     box-shadow: 0px 0px 0px rgb(0, 0, 0) inset;
   }
+  .proItem:nth-child(3) {
+    grid-column: 1/3;
+  }
+  .proItem:nth-child(6) {
+    grid-column: 1/3;
+  }
 }
+/* hr */
+.separador {
+  display: flex;
+  justify-content: center;
+  margin: 35px;
+}
+
 .news {
   padding: 80px;
   background-color: rgb(129, 194, 145);
@@ -353,7 +407,11 @@ ul li a:hover {
   }
 }
 .card-text {
-  text-align: justify;
+  text-align: center;
+}
+
+.textCardSec {
+  color: hsl(155deg, 71%, 32%);
 }
 
 /* .card img {
@@ -382,11 +440,66 @@ ul li a:hover {
 	transform: scale(1.4);
 } */
 /* QUIENES SOMOS */
-.nosotrosText {
+h2.linea {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  margin-top: 1rem;
+}
+h2.linea:before {
+  border-top: 2px solid rgb(129, 194, 145);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.linea span {
+  background: white;
+  padding: 0 15px;
+}
+
+.quienes_somos_banner {
+  background-image: url("../imagenes/bannerEugeCrop.jpg");
+  filter: brightness(1.5);
+  filter: contrast(95%);
+  background-color: #555;
+  box-shadow: 0 0 5px 5px #215125;
+}
+
+.quienes_somos_text {
+  display: inline-block;
+  padding: 0.6rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+  margin-left: 5px;
+  /* font-family: amatic sc; */
+  color: rgba(255, 255, 255, 0.815);
+  font-weight: bolder;
+  text-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .quienes_somos_text {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quienes_somos_text {
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+.nosotrosText, .reciclaText {
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 30px;
+  font-weight: 900;
 }
 
 /* RECICLA */
@@ -419,6 +532,10 @@ ul li a:hover {
   opacity: 0.5;
 }
 
+.overlay img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .overlay h1 {
     font-size: 2em;
@@ -442,18 +559,17 @@ ul li a:hover {
 	background: none;
 	box-shadow: 0 0 16px #000, 0 0 32px #000;
   } */
-.overlay img {
-  width: 100%;
-}
-
 /* CONTACTO */
-.main_contact_container {
-  background: url("/repo_2da_Yaru/imagenes/formula_2.jpg") no-repeat center center fixed;
-  background-size: cover;
-  background-color: #555;
-  box-shadow: 0 0 20px 2px #555;
+/* .main_contact_container { */
+/* background: url('/repo_2da_Yaru/imagenes/formula_2.jpg') no-repeat center center fixed; */
+/* 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #555;
+	box-shadow: 0 0 20px 2px #555; 
 }
-
+*/
 .contSubtitulo h4 {
   margin-left: 10%;
   margin-right: 10%;
@@ -480,4 +596,11 @@ h4 {
   border-left: 1px solid black;
   padding: 10px;
   border-top-left-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }/*# sourceMappingURL=main.css.map */
