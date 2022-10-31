@@ -11,7 +11,8 @@ $hovermenu: rgba(192, 186, 119, 0.144);
 	.navbar-nav {
 		.nav-link {
 			color: $color_1;
-			font-size: 1.1em;
+			font-size: 1.3em;
+			font-weight: 500 ;
 		}
 		margin-top: 0.5em;
 	}
@@ -19,7 +20,9 @@ $hovermenu: rgba(192, 186, 119, 0.144);
 ul {
 	li {
 		a {
-			font-family: 'Lato', sans-serif;
+			font-family: 'Cormorant Upright', serif;
+			 
+			 
 		}
 
 		&:hover {
@@ -82,7 +85,7 @@ ul {
 		padding-right: 10%;
 	}
 	p {
-		color: black;
+		color: rgb(0, 0, 0);
 	}
 	img {
 		height: auto;
@@ -139,6 +142,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2.5rem;
+	font-family: 'Cormorant Upright', serif;
 
 	span {
 		@extend .span;
@@ -152,60 +156,54 @@ ul {
 }
 
 ​ .categorias {
-	 
 	background-color: aqua;
 	background: url('../imagenes/bannerAgua.jpg');
-background-size:   cover;
-background-attachment: fixed;
-	 
-	
+	background-size: cover;
+	background-attachment: fixed;
 	margin-bottom: 30px;
-	
 }
 .categoriasItem {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-evenly;
-	 
+
 	text-align: center;
-
-
-	
 }
 .categoriasItem .categoriasItemBox {
-	/* width: fit-content;
-	height: fit-content; */
+ 
 	padding: 1rem;
 	 
 }
+
+.categoriasItem .categoriasItemBox p {
+	color : rgb(0, 0, 0);
+}
+
 .categoriasItem .categoriasItemBox img {
 	border-radius: 50%;
 }
 
- .categoriasItem .categoriasItemBox:hover {
-	transform: scale(1.05)  ;
-	transition: 0.5s   ;
-	 
+.categoriasItem .categoriasItemBox:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+
 	box-shadow: 1px 1px 10px #555;
 	border-radius: 5px;
-	
 }
- 
+
 @media only screen and (max-width: 576px) {
 	.categorias .categoriasItem {
-		 
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 	.categoriasItem .categoriasItemBox:hover {
 		transform: scale(1.01, 1.01);
-		transition: 0.3s   ;
+		transition: 0.3s;
 		transition-timing-function: linear;
 		box-shadow: 1px 1px 30px #555;
 		border-radius: 5px;
-
 	}
 }
 
@@ -271,13 +269,12 @@ background-attachment: fixed;
 	padding: 3em;
 	display: grid;
 	gap: 2em;
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 	.proItem {
 		padding: .5em;
 		border-radius: .3em;
-		/* box-shadow: 10px 10px 30px black; */
-		box-shadow: 0px 0px 7px rgba(8, 65, 8, 0.521) inset;
+	 box-shadow: 0px 0px 7px rgba(8, 65, 8, 0.521) inset;
 
 		img {
 			width: 100%;
@@ -321,7 +318,7 @@ background-attachment: fixed;
 .text {
 	background-color: #04aa6dab;
 	color: rgb(255, 255, 255);
-	font-size: 16px;
+	font-size: 25px;
 	padding: 14px 28px;
 	border-radius: 5px;
 }
@@ -330,7 +327,7 @@ background-attachment: fixed;
 	.text {
 		background-color: #04aa6da2;
 		color: rgb(255, 255, 255);
-		font-size: 14px;
+		font-size: 19px;
 		padding: 10px 20px;
 		border-radius: 7px;
 	}

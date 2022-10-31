@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poiret+One&family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@100;400&family=Poiret+One&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
 .banner, .contacto .contactoBanner, .recicla .reciclaBanner, .quienes_somos_banner, .productos .productosFaci, .productos .productosCapi, .productos .productosCorp {
   background-position: 70% 30%;
   background-size: cover;
@@ -10,7 +10,7 @@
   margin-top: 20px;
   background-color: #555;
   box-shadow: 0 0 20px 2px #555;
-  border-radius: 6px;
+  border-radius: 2px;
   margin-left: 0.1%;
   margin-right: 0.1%;
 }
@@ -22,7 +22,7 @@
   padding: 0.5rem 2rem;
   -webkit-clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
           clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-  margin-top: 0.5rem;
+  font-family: "Cormorant Upright", serif;
 }
 
 /* HEADER - NAVBAR */
@@ -35,11 +35,12 @@
 }
 .navbar .navbar-nav .nav-link {
   color: black;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 ul li a {
-  font-family: "Lato", sans-serif;
+  font-family: "Cormorant Upright", serif;
 }
 ul li:hover {
   background-color: rgba(192, 186, 119, 0.144);
@@ -93,7 +94,7 @@ ul li:hover {
   padding-right: 10%;
 }
 .somos p {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .somos img {
   height: auto;
@@ -136,6 +137,7 @@ ul li:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 2.5rem;
+  font-family: "Cormorant Upright", serif;
 }
 @media screen and (max-width: 576px) {
   .section2 {
@@ -159,9 +161,11 @@ ul li:hover {
 }
 
 .categoriasItem .categoriasItemBox {
-  /* width: fit-content;
-  height: fit-content; */
   padding: 1rem;
+}
+
+.categoriasItem .categoriasItemBox p {
+  color: rgb(0, 0, 0);
 }
 
 .categoriasItem .categoriasItemBox img {
@@ -246,12 +250,11 @@ ul li:hover {
   padding: 3em;
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .procontainer .proItem {
   padding: 0.5em;
   border-radius: 0.3em;
-  /* box-shadow: 10px 10px 30px black; */
   box-shadow: 0px 0px 7px rgba(8, 65, 8, 0.521) inset;
 }
 .procontainer .proItem img {
@@ -294,7 +297,7 @@ ul li:hover {
 .text {
   background-color: rgba(4, 170, 109, 0.6705882353);
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 25px;
   padding: 14px 28px;
   border-radius: 5px;
 }
@@ -303,7 +306,7 @@ ul li:hover {
   .text {
     background-color: rgba(4, 170, 109, 0.6352941176);
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 19px;
     padding: 10px 20px;
     border-radius: 7px;
   }
@@ -394,7 +397,7 @@ ul li:hover {
 .footer .footerTop .footerGridItem h2 {
   color: white;
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .footer .footerTop .footerGridItem p {
   color: white;
@@ -479,13 +482,22 @@ ul li:hover {
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
   }
+  .section2 {
+    display: none;
+  }
 }
 .card-text {
-  text-align: center;
+  text-align: justify;
+  font-family: "Cormorant Upright", serif;
 }
 
 .textCardSec {
-  color: hsl(155deg, 71%, 32%);
+  color: black;
+}
+
+.textCardTitle {
+  color: black;
+  font-weight: bolder;
 }
 
 /* QUIENES SOMOS */
@@ -520,6 +532,7 @@ h2.linea span {
   box-shadow: 0 0 5px 5px #215125;
 }
 
+/* FLEx O GRID */
 .quienes_somos_text {
   display: inline-block;
   padding: 0.6rem;
@@ -607,6 +620,10 @@ h2.linea span {
     top: 35%;
   }
 }
+.reciclaText {
+  font-family: "sen";
+}
+
 /*  .mapContainer{
 	width: 100%;
 	border: 1px solid black;
@@ -660,9 +677,65 @@ h4 {
   border-top-left-radius: 4px;
 }
 
+/*  
+font-family: 'Roboto', serif;
+font-family: 'Montserrat Alternates', serif;
+font-family: 'Lato', serif;
+font-family: 'Nunito Sans', serif;
+font-family: 'Cormorant Upright', serif;
+*/
+h1,
+h2,
+p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 3em;
+}
+
+h2 {
+  --min: 1.5em; /* minimum value */
+  --val: 4vw; /* preferred value = 4% viewport width */
+  --max: 2.25em; /* maximum value */
+}
+
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 1.4em;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: " ";
+}
+
+h2 {
+  display: block;
+  text-align: center;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+}
+
+p {
+  font-family: "Cormorant Upright", sans serif;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 .footer {
 	width: 100%;
+ 
 	background-color: $azulFooterDark;
 	margin-top: 5px;
 	.footerTop {
@@ -25,12 +26,13 @@
 			h2 {
 				color: white;
 				margin-bottom: 25px;
-				font-size: 20px;
+				font-size: 1.2rem;
 			}
 			p {
 				color: white;
 				margin-bottom: 10px;
 				text-align: center;
+				
 			}
 		}
 		.redSocial {
@@ -57,7 +59,7 @@
 		padding: 15px 10px;
 		text-align: center;
 		color: $color1;
-		small {
+		 small {
 			font-size: 15px;
 		}
 	}

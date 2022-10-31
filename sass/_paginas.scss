@@ -1,3 +1,5 @@
+
+
 /* PRODUCTOS*/
 
 .productos {
@@ -42,19 +44,33 @@
 
 @media screen and (max-width: $mobile) {
 	.productosText {
+		
 		letter-spacing: 0.5rem;
 		font-size: 1.5rem;
+	}
+	.section2 {
+		display: none;
 	}
 }
 
 .card-text {
-	text-align: center;
+	text-align: justify;
+ 
+font-family: 'Cormorant Upright', serif;
+ 
+	 
 }
 
 .textCardSec {
-	color: hsl(155, 71%, 32%);
+	color : black;
 }
 
+.textCardTitle {
+	color: black;
+	font-weight: bolder;
+}
+
+ 
 /* QUIENES SOMOS */
 
 h2.linea {
@@ -88,6 +104,9 @@ h2.linea {
 	background-color: #555;
 	box-shadow: 0 0 5px 5px #215125;
 }
+
+/* FLEx O GRID */
+
 .quienes_somos_text {
 	display: inline-block;
 	padding: .6rem;
@@ -167,6 +186,8 @@ h2.linea {
 	}
 }
 
+ 
+
 @media screen and (max-width: $desktop) and (min-width: $tablet) {
 	.overlay {
 		h2 {
@@ -192,6 +213,7 @@ h2.linea {
 
 .reciclaText {
 	@extend .nosotrosText;
+	font-family: 'sen';
 }
 /*  .mapContainer{
 	width: 100%;

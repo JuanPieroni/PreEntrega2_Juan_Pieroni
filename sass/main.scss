@@ -4,16 +4,74 @@
 @import 'footer';
 @import 'paginas';
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poiret+One&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@100;400&family=Poiret+One&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+/*  
+font-family: 'Roboto', serif;
+font-family: 'Montserrat Alternates', serif;
+font-family: 'Lato', serif;
+font-family: 'Nunito Sans', serif;
+font-family: 'Cormorant Upright', serif;
+*/
+ 
+ 
+h1,
+h2,
+p  {
+	// Font minimum, preferred and maximum value
+	font-size: clamp(var(--min), var(--val), var(--max));
+}
 
+// Font size variables
+h1 {
+	--min: 2em; // minimum value
+	--val: 5vw; // preferred value = 5% viewport width
+	--max: 3em; // maximum value
+}
+h2 {
+	--min: 1.5em; /* minimum value */
+	--val: 4vw; /* preferred value = 4% viewport width */
+	--max: 2.25em; /* maximum value */
+}
+p {
+	--min: 1em; // minimum value
+	--val: 2.5vw; // preferred value = 2.5% viewport width
+	--max: 1.4em; // maximum value
+}
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:    sans-serif;
-     
+	font-family: 'Cormorant Upright', serif;
+	font-weight: 500;
+	 
+}
+
+body,
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	 
+	font-family: ' ';
+}
+
+h2 {
+	display: block;
+	text-align: center;
+}
+
+h3 {
+	display: block;
+	text-align: center;
+}
+ 
+
+p {
+	font-family: 'Cormorant Upright', sans serif;
 }
