@@ -15,30 +15,28 @@ font-family: 'Lato', serif;
 font-family: 'Nunito Sans', serif;
 font-family: 'Cormorant Upright', serif;
 */
- 
- 
+
 h1,
 h2,
-p  {
-	// Font minimum, preferred and maximum value
+p {
 	font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 // Font size variables
 h1 {
-	--min: 2em; // minimum value
-	--val: 5vw; // preferred value = 5% viewport width
-	--max: 3em; // maximum value
+	--min: 2em;
+	--val: 5vw; //   5% viewport width
+	--max: 3em;
 }
 h2 {
-	--min: 1.5em; /* minimum value */
-	--val: 4vw; /* preferred value = 4% viewport width */
-	--max: 2.25em; /* maximum value */
+	--min: 1.5em;
+	--val: 4vw; /*  4% viewport width */
+	--max: 2.25em;
 }
 p {
-	--min: 1.3em; // minimum value
-	--val: 2.5vw; // preferred value = 2.5% viewport width
-	--max: 1.6em; // maximum value
+	--min: 1.3em;
+	--val: 2.5vw; // 2.5% viewport width
+	--max: 1.6em;
 }
 
 * {
@@ -47,7 +45,6 @@ p {
 	box-sizing: border-box;
 	font-family: 'Cormorant Upright', serif;
 	font-weight: 500;
-	 
 }
 
 body,
@@ -57,7 +54,6 @@ html {
 }
 
 h1 {
-	 
 	font-family: ' ';
 }
 
@@ -70,7 +66,6 @@ h3 {
 	display: block;
 	text-align: center;
 }
- 
 
 p {
 	font-family: 'Cormorant Upright', sans serif;

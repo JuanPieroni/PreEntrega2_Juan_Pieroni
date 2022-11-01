@@ -38,9 +38,15 @@
   font-size: 1.3em;
   font-weight: 500;
 }
+@media screen and (max-width: 576px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+  }
+}
 
 ul li a {
   font-family: "Cormorant Upright", serif;
+  text-transform: uppercase;
 }
 ul li:hover {
   background-color: rgba(192, 186, 119, 0.144);
@@ -193,58 +199,6 @@ ul li:hover {
     border-radius: 5px;
   }
 }
-/* .categorias {
-	background: url('../imagenes/bannerAgua.jpg');
-
-	justify-content: center;
-	background-size: cover;
-	margin-bottom: 30px;
-	background-attachment: fixed;
-	.categoriasItem {
-		max-width: 1250px;
-		padding: 50px;
-		align-content: center;
-		justify-content: center;
-		.categoriasItemBox {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			text-align: center;
-			img {
-				border-radius: 140px;
-				height: 250px;
-				width: 90%;
-				border: 1px solid rgb(8, 1, 34);
-			}
-			&:hover {
-				transform: scale(1.05, 1.05);
-				transition: 0.3s;
-			}
-		}
-	}
-}
-@media only screen and (min-width: $desktop) {
-	.categorias {
-		.categoriasItem {
-			.categoriasItemBox {
-				img {
-					width: 70%;
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.categorias {
-		.categoriasItem {
-			.categoriasItemBox {
-				img {
-					width: 70%;
-				}
-			}
-		}
-	}
-} */
 /* SECTION 3 */
 .procontainer {
   padding: 3em;
@@ -261,7 +215,6 @@ ul li:hover {
   width: 100%;
 }
 
-/* sacar lo que no suma */
 .containerr {
   position: relative;
   width: auto;
@@ -297,7 +250,7 @@ ul li:hover {
 .text {
   background-color: rgba(4, 170, 109, 0.6705882353);
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: px;
   padding: 14px 28px;
   border-radius: 5px;
 }
@@ -311,7 +264,6 @@ ul li:hover {
     border-radius: 7px;
   }
 }
-/* sacar lo que no suma arriba */
 @media screen and (max-width: 576px) {
   .procontainer {
     grid-template-columns: 1fr 1fr;
@@ -444,7 +396,7 @@ ul li:hover {
 /* PRODUCTOS*/
 .productos {
   height: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   position: relative;
 }
 .productos .productosCorp {
@@ -465,7 +417,6 @@ ul li:hover {
   font-size: 2.5rem;
   letter-spacing: 0.8rem;
   margin-left: 5px;
-  /* font-family: amatic sc; */
   color: white;
   font-weight: bolder;
   mix-blend-mode: overlay;
@@ -482,7 +433,9 @@ ul li:hover {
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
   }
-  .section2 {
+}
+@media screen and (max-width: 576px) {
+  .tituloProductos .section2 {
     display: none;
   }
 }
@@ -532,7 +485,6 @@ h2.linea span {
   box-shadow: 0 0 5px 5px #215125;
 }
 
-/* FLEx O GRID */
 .quienes_somos_text {
   display: inline-block;
   padding: 0.6rem;
@@ -591,16 +543,12 @@ h2.linea span {
   transform: translate(-50%, -50%);
   padding: 16px;
   border-radius: 8px;
-  /* font-family: $font-family_1; */
   font-size: 3rem;
   margin: 0;
   opacity: 0.5;
 }
 .overlay img {
   width: 100%;
-  /* NO FUNCIONA MARGIN RIGHT */
-  /*  margin-left: 5% ;
-  		margin-right: 5%;  */
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -615,46 +563,23 @@ h2.linea span {
 }
 @media screen and (max-width: 576px) {
   .overlay h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     opacity: 0.6;
     top: 35%;
   }
 }
 .reciclaText {
-  font-family: "sen";
+  font-family: "Cormorant Upright", serif;
 }
 
-/*  .mapContainer{
-	width: 100%;
-	border: 1px solid black;
-	overflow: hidden;
- }
- .googlemap {
-	width:100%;
-	height: 400px;
- margin-left: 15%;
- margin-right: 15%;
- margin-top: 5%;;
- padding: 30px;
- }
- */
-/* CONTACTO */
-/* .main_contact_container { */
-/* background: url('/repo_2da_Yaru/imagenes/formula_2.jpg') no-repeat center center fixed; */
-/* 	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-color: #555;
-	box-shadow: 0 0 20px 2px #555; 
-}
-*/
+/* Contacto */
 .contSubtitulo h4 {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 
 .contacto .contactoBanner {
@@ -666,10 +591,6 @@ h2.linea span {
   padding: 0;
 }
 
-h4 {
-  text-transform: uppercase;
-}
-
 .copete {
   border-top: 1px solid black;
   border-left: 1px solid black;
@@ -677,6 +598,29 @@ h4 {
   border-top-left-radius: 4px;
 }
 
+.listContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+ul.listBene {
+  display: inline-block;
+  text-align: left;
+  font-size: 25px;
+}
+
+.reciclaTitulo,
+.reciclaSubTitulo {
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  ul.listBene {
+    font-size: 1rem;
+    padding-right: 10%;
+  }
+}
 /*  
 font-family: 'Roboto', serif;
 font-family: 'Montserrat Alternates', serif;
@@ -697,9 +641,9 @@ h1 {
 }
 
 h2 {
-  --min: 1.5em; /* minimum value */
-  --val: 4vw; /* preferred value = 4% viewport width */
-  --max: 2.25em; /* maximum value */
+  --min: 1.5em;
+  --val: 4vw; /*  4% viewport width */
+  --max: 2.25em;
 }
 
 p {

@@ -1,7 +1,6 @@
 $mobile: 576px;
 $tablet: 768px;
 $desktop: 1023px;
- 
 
 $color1: #fff;
 $color2: #efefef;
@@ -19,18 +18,16 @@ $azulNewsBtn: #243c4f;
 $violetaHoverBtn: rgb(48, 59, 155);
 $border-color_1: #fff;
 
- 
-
 .banner {
 	background-position: 70% 30%;
 	background-size: cover;
 	height: 160px;
 	margin-top: 20px;
 	background-color: #555;
-    box-shadow: 0 0 20px 2px #555;
+	box-shadow: 0 0 20px 2px #555;
 	border-radius: 2px;
 	margin-left: 0.1%;
-	margin-right: 0.1%;	 
+	margin-right: 0.1%;
 }
 
 .span {
@@ -39,7 +36,6 @@ $border-color_1: #fff;
 	display: inline-block;
 	padding: .5rem 2rem;
 	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-	 
+
 	font-family: 'Cormorant Upright', serif;
 }
-

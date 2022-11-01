@@ -1,10 +1,8 @@
-
-
 /* PRODUCTOS*/
 
 .productos {
 	height: 150px;
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 	position: relative;
 
 	.productosCorp {
@@ -28,8 +26,7 @@
 	padding: .6rem;
 	font-size: 2.5rem;
 	letter-spacing: .8rem;
-	margin-left: 5px;
-	/* font-family: amatic sc; */
+	margin-left: 5px; 
 	color: white;
 	font-weight: bolder;
 	mix-blend-mode: overlay;
@@ -44,25 +41,24 @@
 
 @media screen and (max-width: $mobile) {
 	.productosText {
-		
 		letter-spacing: 0.5rem;
 		font-size: 1.5rem;
 	}
-	.section2 {
+}
+
+@media screen and (max-width: $mobile) {
+	.tituloProductos .section2 {
 		display: none;
 	}
 }
-
 .card-text {
 	text-align: justify;
- 
-font-family: 'Cormorant Upright', serif;
- 
-	 
+
+	font-family: 'Cormorant Upright', serif;
 }
 
 .textCardSec {
-	color : black;
+	color: black;
 }
 
 .textCardTitle {
@@ -70,7 +66,6 @@ font-family: 'Cormorant Upright', serif;
 	font-weight: bolder;
 }
 
- 
 /* QUIENES SOMOS */
 
 h2.linea {
@@ -104,8 +99,6 @@ h2.linea {
 	background-color: #555;
 	box-shadow: 0 0 5px 5px #215125;
 }
-
-/* FLEx O GRID */
 
 .quienes_somos_text {
 	display: inline-block;
@@ -171,22 +164,15 @@ h2.linea {
 		transform: translate(-50%, -50%);
 		padding: 16px;
 		border-radius: 8px;
-		/* font-family: $font-family_1; */
+
 		font-size: 3rem;
 		margin: 0;
 		opacity: 0.5;
 	}
 	img {
 		width: 100%;
-
-/* NO FUNCIONA MARGIN RIGHT */
-
-/*  margin-left: 5% ;
-		margin-right: 5%;  */
 	}
 }
-
- 
 
 @media screen and (max-width: $desktop) and (min-width: $tablet) {
 	.overlay {
@@ -205,7 +191,7 @@ h2.linea {
 }
 @media screen and (max-width: $mobile) {
 	.overlay h2 {
-		font-size: 1rem;
+		font-size: 1.3rem;
 		opacity: .6;
 		top: 35%;
 	}
@@ -213,41 +199,18 @@ h2.linea {
 
 .reciclaText {
 	@extend .nosotrosText;
-	font-family: 'sen';
+	font-family: 'Cormorant Upright', serif;
 }
-/*  .mapContainer{
-	width: 100%;
-	border: 1px solid black;
-	overflow: hidden;
- }
- .googlemap {
-	width:100%;
-	height: 400px;
- margin-left: 15%;
- margin-right: 15%;
- margin-top: 5%;;
- padding: 30px;
- }
- */
 
-/* CONTACTO */
-/* .main_contact_container { */
-/* background: url('/repo_2da_Yaru/imagenes/formula_2.jpg') no-repeat center center fixed; */
+/* Contacto */
 
-/* 	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-color: #555;
-	box-shadow: 0 0 20px 2px #555; 
-}
-*/
 .contSubtitulo h4 {
 	margin-left: 10%;
 	margin-right: 10%;
 	text-align: center;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: 3rem;
+	margin-bottom: .5rem;
+	text-transform: capitalize;
 }
 
 .contacto .contactoBanner {
@@ -260,13 +223,34 @@ h2.linea {
 	padding: 0;
 }
 
-h4 {
-	text-transform: uppercase;
-}
-
 .copete {
 	border-top: 1px solid black;
 	border-left: 1px solid black;
 	padding: 10px;
 	border-top-left-radius: 4px;
+}
+
+.listContainer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+ul.listBene {
+	display: inline-block;
+	text-align: left;
+	font-size: 25px;
+}
+
+.reciclaTitulo,
+.reciclaSubTitulo {
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: $mobile) {
+	ul.listBene {
+		font-size: 1rem;
+
+		padding-right: 10%;
+	}
 }

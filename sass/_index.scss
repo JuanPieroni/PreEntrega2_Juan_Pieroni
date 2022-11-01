@@ -12,7 +12,10 @@ $hovermenu: rgba(192, 186, 119, 0.144);
 		.nav-link {
 			color: $color_1;
 			font-size: 1.3em;
-			font-weight: 500 ;
+			font-weight: 500;
+			@media screen and (max-width: $mobile) {
+				font-size: 1.1em;
+			}
 		}
 		margin-top: 0.5em;
 	}
@@ -21,8 +24,7 @@ ul {
 	li {
 		a {
 			font-family: 'Cormorant Upright', serif;
-			 
-			 
+			text-transform: uppercase;
 		}
 
 		&:hover {
@@ -143,7 +145,6 @@ ul {
 	align-items: center;
 	margin-bottom: 2.5rem;
 	font-family: 'Cormorant Upright', serif;
-
 	span {
 		@extend .span;
 	}
@@ -171,13 +172,11 @@ ul {
 	text-align: center;
 }
 .categoriasItem .categoriasItemBox {
- 
 	padding: 1rem;
-	 
 }
 
 .categoriasItem .categoriasItemBox p {
-	color : rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
 .categoriasItem .categoriasItemBox img {
@@ -210,59 +209,6 @@ ul {
 @media only screen and (max-width: 768px) {
 }
 
-/* .categorias {
-	background: url('../imagenes/bannerAgua.jpg');
-
-	justify-content: center;
-	background-size: cover;
-	margin-bottom: 30px;
-	background-attachment: fixed;
-	.categoriasItem {
-		max-width: 1250px;
-		padding: 50px;
-		align-content: center;
-		justify-content: center;
-		.categoriasItemBox {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			text-align: center;
-			img {
-				border-radius: 140px;
-				height: 250px;
-				width: 90%;
-				border: 1px solid rgb(8, 1, 34);
-			}
-			&:hover {
-				transform: scale(1.05, 1.05);
-				transition: 0.3s;
-			}
-		}
-	}
-}
-@media only screen and (min-width: $desktop) {
-	.categorias {
-		.categoriasItem {
-			.categoriasItemBox {
-				img {
-					width: 70%;
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.categorias {
-		.categoriasItem {
-			.categoriasItemBox {
-				img {
-					width: 70%;
-				}
-			}
-		}
-	}
-} */
-
 /* SECTION 3 */
 
 .procontainer {
@@ -274,15 +220,13 @@ ul {
 	.proItem {
 		padding: .5em;
 		border-radius: .3em;
-	 box-shadow: 0px 0px 7px rgba(8, 65, 8, 0.521) inset;
+		box-shadow: 0px 0px 7px rgba(8, 65, 8, 0.521) inset;
 
 		img {
 			width: 100%;
 		}
 	}
 }
-
-/* sacar lo que no suma */
 
 .containerr {
 	position: relative;
@@ -318,7 +262,7 @@ ul {
 .text {
 	background-color: #04aa6dab;
 	color: rgb(255, 255, 255);
-	font-size: 25px;
+	font-size: px;
 	padding: 14px 28px;
 	border-radius: 5px;
 }
@@ -332,8 +276,6 @@ ul {
 		border-radius: 7px;
 	}
 }
-
-/* sacar lo que no suma arriba */
 
 @media screen and (max-width: $mobile) {
 	.procontainer {
