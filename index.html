@@ -16,18 +16,17 @@
     <!-- Css Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- FONT AWSOME -->
-    <script src="https://kit.fontawesome.com/e857cefdc0.js" crossorigin="anonymous"></script>
 
 
 
-    <!-- Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
     <!-- AnimatedCSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -76,7 +75,7 @@
 
     <!-- CAROUSEL -->
 
-   
+
     <section id="carrousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators d-none">
@@ -118,19 +117,25 @@
     <!-- Incio Somos Yaru -->
 
     <div class="somos">
+        <div data-aos="fade-down" data-aos-duration="1500">
         <p class="somosText">
             SOMOS
         </p>
-        <div class="somosText ">
+    </div>
+        <div  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="1000"
+        data-aos-offset="0" class="somosText ">
             <img src="./logos/yaru_logo_crop.png" alt="">
         </div>
 
-        <p class="somosText">
+        <div data-aos="fade-right" data-aos-duration="3000">
+            <p class="somosText">
 
-            Buscamos promover un consumo responsable a partir de formulas
-            sin aditivos nocivos
-        </p>
-
+                Buscamos promover un consumo responsable a partir de formulas
+                sin aditivos nocivos
+            </p>
+        </div>
         <div class="somosText">
             <a href="./paginas/quienes_somos.html#nosotros" class="btn">Conocenos > </a>
         </div>
@@ -311,10 +316,10 @@
             </div>
             <div class="footerGridItem">
                 <h2>CONTACTO</h2>
-                <p>yarucosmetica@gmail.com</p>
+                <p class="dire">yarucosmetica@gmail.com</p>
                 <p>Centro de Reciclaje:</p>
-                <p> Amenabar 3240 - CABA</p>
-                <p>Rosario 4365 - Don Torcuato - Bs. As.</p>
+                <p class="dire"> Amenabar 3240 - CABA</p>
+                <p class="dire">Rosario 4365 - Don Torcuato - Bs. As.</p>
             </div>
             <div class="footerGridItem">
                 <h2>SEGUINOS EN LAS REDES</h2>
@@ -322,7 +327,7 @@
                     <a href="https://www.facebook.com/profile.php?id=100083271790950" class="fa fa-facebook"
                         target="_blank"></a>
                     <a href="https://www.instagram.com/yaru_cosmetica/" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://wa.me/5491161276562?text= Hola!! he visitado tu tienda y me gustaria hacerte una consulta..."
+                    <a href="https://wa.me/5491161276562?text= Hola!! he visitado tu blog y me gustaria hacerte una consulta..."
                         class="fa fa-whatsapp" target="_blank"></a>
                 </div>
             </div>
@@ -331,16 +336,25 @@
             <small>&copy; 2022 <b>Yaru Cosmetica</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+
+    <div>
+        <a class="whats-app"
+            href="https://wa.me/5491161276562?text= Hola!! he visitado tu blog y me gustaria hacerte una consulta..."
+            target="_blank">
+            <i class="fa fa-whatsapp float"></i>
+        </a>
+    </div>
     <!-- End FOOTER -->
 
 
 
-    <!-- AOS -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/e857cefdc0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -349,6 +363,8 @@
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <!-- AOS -->
+
 </body>
 
 </html>

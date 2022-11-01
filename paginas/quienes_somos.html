@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+       <!-- Aos -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
@@ -72,27 +74,28 @@
         <div class=" nosotrosCont row">
             <div class=" container-fluid mx-auto  col-xl-7 col-md-12 col-sm-12">
                 <h2 class="linea"><span>NOSOTROS</span></h2>
-                <p class="nosotrosText">
+                <p class="nosotrosText " data-aos="fade-up"
+                data-aos-duration="1500">
                     Hola! soy Euge y soy quien lidera Yaru cosmética. Siempre fui amante y defensora de la naturaleza y
                     los animales.
-                    Cuando creci me interese en las ciencias duras. La quimica me apasiona. Hace algunos años logré
+                    Cuando crecí me interese en las ciencias duras. La quimica me apasiona. Hace algunos años logré
                     fusionar mi pasion por la naturaleza y las ciencias, y asi nació Yarú.
-                    Creando cosmetica con consciencia, logrando sinergía entre las propiedades de las plantas y la
+                    Creando cosmetica con conciencia, logrando sinergía entre las propiedades de las plantas y la
                     quimica. Todas mis fórmulas estan pensadas para lograr
                     un equilibrio entre lo que nuestra piel necesita y lo que la naturaleza nos da.
                 </p>
-                <p class="nosotrosText">
+                <p data-aos="fade-right" data-aos-duration="3000" class="nosotrosText">
                     Te invito a sumarte a este proyecto para que compruebes vos misma la satisfaccion de usar cosmetica
                     natural.
                 </p>
-                <p class="text-center mt-3 text-secondary">Mira todas las novedades en <a
-                        href="https://www.instagram.com/yaru_cosmetica/" target="_blank">Instagram</a></p>
+
 
             </div>
-            <div class=" nosotrosImg mx-auto  col-xl-5  col-md-7 col-sm-12 g-5">
+            <div data-aos="zoom-in" data-aos-duration="1200" class=" nosotrosImg mx-auto  col-xl-5  col-md-7 col-sm-12 g-5">
                 <img src="../imagenes/euge.jpg" class="img-fluid" alt="Formula">
             </div>
-
+            <p class="text-center mt-3 text-secondary">Mira todas las novedades en <a
+                    href="https://www.instagram.com/yaru_cosmetica/" target="_blank">Instagram</a></p>
         </div>
     </section>
 
@@ -109,10 +112,10 @@
             </div>
             <div class="footerGridItem">
                 <h2>CONTACTO</h2>
-                <p>yarucosmetica@gmail.com</p>
+                <p class="dire">yarucosmetica@gmail.com</p>
                 <p>Centro de Reciclaje:</p>
-                <p> Amenabar 3240 - CABA</p>
-                <p>Rosario 4365 - Don Torcuato - Bs. As.</p>
+                <p class="dire"> Amenabar 3240 - CABA</p>
+                <p class="dire">Rosario 4365 - Don Torcuato - Bs. As.</p>
             </div>
             <div class="footerGridItem">
                 <h2>SEGUINOS EN LAS REDES</h2>
@@ -120,7 +123,7 @@
                     <a href="https://www.facebook.com/profile.php?id=100083271790950" class="fa fa-facebook"
                         target="_blank"></a>
                     <a href="https://www.instagram.com/yaru_cosmetica/" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://wa.me/5491161276562?text= Hola!! he visitado tu tienda y me gustaria hacerte una consulta..."
+                    <a href="https://wa.me/5491161276562?text= Hola!! he visitado tu blog y me gustaria hacerte una consulta..."
                         class="fa fa-whatsapp" target="_blank"></a>
                 </div>
             </div>
@@ -132,6 +135,10 @@
     <!-- End FOOTER -->
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 
