@@ -26,7 +26,7 @@
 	padding: .6rem;
 	font-size: 2.5rem;
 	letter-spacing: .8rem;
-	margin-left: 5px; 
+	margin-left: 5px;
 	color: white;
 	font-weight: bolder;
 	mix-blend-mode: overlay;
@@ -52,8 +52,6 @@
 	}
 }
 .card-text {
-	 
-
 	font-family: 'Cormorant Upright', serif;
 }
 
@@ -66,8 +64,7 @@
 	color: black;
 	font-weight: bolder;
 }
- 
-$popover-font-size: $font-size-sm;
+
 /* QUIENES SOMOS */
 
 h2.linea {
@@ -107,8 +104,7 @@ h2.linea {
 	padding: .6rem;
 	font-size: 2.5rem;
 	letter-spacing: .8rem;
-	margin-left: 5px;
-	/* font-family: amatic sc; */
+	margin-left: 5px;	 
 	color: rgba(255, 255, 255, 0.815);
 	font-weight: bolder;
 
@@ -138,6 +134,10 @@ h2.linea {
 
 .nosotrosImg {
 	margin: 5px;
+}
+
+.text-secondary {
+	margin-bottom: 30px ;
 }
 
 /* RECICLA */
@@ -212,7 +212,7 @@ h2.linea {
 	text-align: center;
 	margin-top: 3rem;
 	margin-bottom: .5rem;
-	text-transform: capitalize;
+	text-transform:  none;
 }
 
 .contacto .contactoBanner {
@@ -235,6 +235,7 @@ h2.linea {
 .listContainer {
 	text-align: center;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 ul.listBene {
@@ -255,4 +256,9 @@ ul.listBene {
 
 		padding-right: 10%;
 	}
+}
+
+
+.linea span {
+	display: inline-block;
 }
