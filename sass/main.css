@@ -475,12 +475,12 @@ ul li:hover {
   }
 }
 .card-text {
-  text-align: justify;
   font-family: "Cormorant Upright", serif;
 }
 
 .textCardSec {
   color: black;
+  text-align: center;
 }
 
 .textCardTitle {

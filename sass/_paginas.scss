@@ -52,20 +52,22 @@
 	}
 }
 .card-text {
-	text-align: justify;
+	 
 
 	font-family: 'Cormorant Upright', serif;
 }
 
 .textCardSec {
 	color: black;
+	text-align: center;
 }
 
 .textCardTitle {
 	color: black;
 	font-weight: bolder;
 }
-
+ 
+$popover-font-size: $font-size-sm;
 /* QUIENES SOMOS */
 
 h2.linea {
